@@ -50,18 +50,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             if (message.includes('Permission granted')) {
                 alert('Permission granted!');
-            } else if (message.includes('Permission denied')) {
-                alert('Permission denied!');
-            } else {
-                alert('Unexpected response from the server. Please check the console for details.');
-            }
+            } 
 
             // Update permission history
-            updateHistoryList({ userName, permission });
-        } catch (error) {
-            console.error('Error:', error);
-            alert('Error sending permission request. Please check the console for details.');
-        }
+            //updateHistoryList({ userName, permission });
+        //} catch (error) {
+          //  console.error('Error:', error);
+            //alert('Error sending permission request. Please check the console for details.');
+        //}
     }
 
     // Function to update permission history list
